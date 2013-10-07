@@ -22,7 +22,7 @@ gem 'kaminari'
 gem 'aws-sdk'
 gem 'paperclip'
 gem 'remotipart'
-gem 'jquery-rails'
+gem 'jquery-rails', "< 3.0.0"
 gem 'enumerize'
 
 # Gems used only for assets and not required
