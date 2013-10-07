@@ -19,6 +19,8 @@ gem "devise_ldap_authenticatable"
 gem 'thin'
 gem 'faye'
 
+gem 'pry'
+
 # Helper gems
 gem 'kaminari'
 gem 'aws-sdk'

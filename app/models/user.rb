@@ -121,4 +121,9 @@ class User < ActiveRecord::Base
     end
   end
 
+  def ldap_before_save
+    username = send(::Devise::authentication_keys.first)
+    ldap = ::Devise::LDAP::Connection.new login: username
+    self.email = (ldap.ldap_param_value "mail").first
+  end
 end
